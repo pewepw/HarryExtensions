@@ -1,0 +1,22 @@
+{
+  "name": "HarryExtensions",
+  "version": "0.1.0",
+  "summary": "A short description of HarryExtensions.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/pewepw/HarryExtensions",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "pewepw": "poripori1030@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/pewepw/HarryExtensions.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HarryExtensions/Classes/**/*"
+}

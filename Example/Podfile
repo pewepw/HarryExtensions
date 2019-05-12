@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HarryExtensions_Example' do
+  pod 'HarryExtensions', :path => '../'
+
+  target 'HarryExtensions_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

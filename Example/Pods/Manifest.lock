@@ -1,0 +1,16 @@
+PODS:
+  - HarryExtensions (0.1.0)
+
+DEPENDENCIES:
+  - HarryExtensions (from `../`)
+
+EXTERNAL SOURCES:
+  HarryExtensions:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HarryExtensions: 590b9b4d09ad7455c9f83087f7f0b6aac874d228
+
+PODFILE CHECKSUM: 760da2828600b706d87d811d5e8b399c3c6d77b3
+
+COCOAPODS: 1.6.0
