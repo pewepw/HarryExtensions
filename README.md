@@ -10,6 +10,8 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+- Xcode 10+
+- Swift 4.2+
 
 ## Installation
 
@@ -20,7 +22,7 @@ it, simply add the following line to your Podfile:
 pod 'HarryExtensions'
 ```
 
-## Basic Example
+## Usage
 
 #### 1. Stack vertically and horizontally, with UIView anchors extension
 
