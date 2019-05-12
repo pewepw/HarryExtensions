@@ -43,6 +43,7 @@ profileStackView.anchor(top: topAnchor, leading: pointStackView.trailingAnchor, 
 ```
 ![StackViewExample](https://user-images.githubusercontent.com/24606625/57584335-c532aa00-750c-11e9-9c71-3f087b232f34.jpeg)
 
+And also a handy collection of Swift extensions to boost your productivity
 
 ## Author
 
