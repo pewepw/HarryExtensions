@@ -22,7 +22,7 @@ pod 'HarryExtensions'
 
 ## Usage
 
-Stack vertically and horizontally
+#### 1. Stack vertically and horizontally
 
 ```swift
 let pointStackView = VerticalStackView(arrangedSubviews: [
@@ -39,10 +39,8 @@ let profileStackView = HorizontalStackView(arrangedSubviews: [
 addSubview(profileStackView)
 profileStackView.anchor(top: topAnchor, leading: pointStackView.trailingAnchor, bottom: nil, trailing: trailingAnchor, padding: .init(top: 10, left: 15, bottom: 0, right: 15), size: .init(width: 0, height: 40))
 ```
-
-Result
-
 ![StackViewExample](https://user-images.githubusercontent.com/24606625/57584335-c532aa00-750c-11e9-9c71-3f087b232f34.jpeg)
+
 
 ## Author
 
