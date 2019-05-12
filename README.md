@@ -20,6 +20,26 @@ it, simply add the following line to your Podfile:
 pod 'HarryExtensions'
 ```
 
+## Usage
+
+Stack vertically and horizontally
+
+```swift
+let pointStackView = VerticalStackView(arrangedSubviews: [
+                availableTitleLabel,
+                pointLabel
+            ])
+addSubview(pointStackView)
+pointStackView.anchor(top: topAnchor, leading: leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 10, left: 15, bottom: 0, right: 0), size: .init(width: 0, height: 40))
+        
+let profileStackView = HorizontalStackView(arrangedSubviews: [
+      nameLabel,
+      profileImage
+    ], spacing: 10)
+addSubview(profileStackView)
+profileStackView.anchor(top: topAnchor, leading: pointStackView.trailingAnchor, bottom: nil, trailing: trailingAnchor, padding: .init(top: 10, left: 15, bottom: 0, right: 15), size: .init(width: 0, height: 40))
+```
+
 ## Author
 
 pewepw, harryng.gj@gmail.com
