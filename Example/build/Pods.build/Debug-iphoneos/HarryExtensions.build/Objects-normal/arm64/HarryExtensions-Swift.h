@@ -186,49 +186,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
-
-
-
-
-
-
-
-
-
-@interface UILabel (SWIFT_EXTENSION(HarryExtensions))
-@property (nonatomic, copy) NSString * _Nonnull substituteFontName;
-@end
-
-
-
-
-
-
-@interface UITextField (SWIFT_EXTENSION(HarryExtensions))
-@property (nonatomic, copy) NSString * _Nonnull substituteFontName;
-@end
-
-
-@interface UITextView (SWIFT_EXTENSION(HarryExtensions))
-@property (nonatomic, copy) NSString * _Nonnull substituteFontName;
-@end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
