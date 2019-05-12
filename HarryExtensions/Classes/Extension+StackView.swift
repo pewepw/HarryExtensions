@@ -8,9 +8,9 @@
 
 import UIKit
 
-class VerticalStackView: UIStackView {
+public class VerticalStackView: UIStackView {
     
-    init(arrangedSubviews: [UIView], spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, layoutMargins: UIEdgeInsets = .zero) {
+    public init(arrangedSubviews: [UIView], spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, layoutMargins: UIEdgeInsets = .zero) {
         super.init(frame: .zero)
         
         arrangedSubviews.forEach({addArrangedSubview($0)})
@@ -28,9 +28,9 @@ class VerticalStackView: UIStackView {
     
 }
 
-class HorizontalStackView: UIStackView {
+public class HorizontalStackView: UIStackView {
     
-    init(arrangedSubviews: [UIView], spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, layoutMargins: UIEdgeInsets = .zero) {
+    public init(arrangedSubviews: [UIView], spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, layoutMargins: UIEdgeInsets = .zero) {
         super.init(frame: .zero)
         
         arrangedSubviews.forEach({addArrangedSubview($0)})

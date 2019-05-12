@@ -46,7 +46,7 @@ extension UILabel {
         self.attributedText = answerAttributed
     }
     
-    var vissibleTextLength: Int {
+    public var vissibleTextLength: Int {
         let font: UIFont = self.font
         let mode: NSLineBreakMode = self.lineBreakMode
         let labelWidth: CGFloat = self.frame.size.width

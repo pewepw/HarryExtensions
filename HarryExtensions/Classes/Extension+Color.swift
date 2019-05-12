@@ -13,7 +13,7 @@ extension UIColor {
         return UIColor(red: red/255, green: green/255, blue: blue/255, alpha: 1)
     }
     
-    convenience init(hex: String) {
+    convenience public init(hex: String) {
         var dropHexString = hex
         dropHexString.remove(at: hex.startIndex)
         
@@ -35,7 +35,7 @@ extension UIColor {
         )
     }
     
-    var hexString:String? {
+    public var hexString:String? {
         if let components = self.cgColor.components {
             let r = components[0]
             let g = components[1]

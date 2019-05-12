@@ -54,7 +54,7 @@ extension UIViewController {
 }
 
 extension UIApplication {
-    var statusBarView: UIView? {
+    public var statusBarView: UIView? {
         if responds(to: Selector(("statusBar"))) {
             return value(forKey: "statusBar") as? UIView
         }

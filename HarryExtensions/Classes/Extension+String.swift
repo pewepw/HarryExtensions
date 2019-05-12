@@ -18,7 +18,7 @@ extension String {
         return !self.isEmpty && self.rangeOfCharacter(from: numberCharacters) == nil
     }
     
-    var htmlToAttributedString: NSAttributedString? {
+    public var htmlToAttributedString: NSAttributedString? {
         guard let data = data(using: .utf8) else { return NSAttributedString() }
         do {
             return try NSAttributedString(data: data, options: [NSAttributedString.DocumentReadingOptionKey.documentType:  NSAttributedString.DocumentType.html], documentAttributes: nil)
@@ -27,7 +27,7 @@ extension String {
         }
     }
     
-    var htmlToString: String {
+    public var htmlToString: String {
         return htmlToAttributedString?.string ?? ""
     }
     
@@ -55,11 +55,11 @@ extension String {
         }
     }
     
-    var containsChineseCharacters: Bool {
+    public var containsChineseCharacters: Bool {
         return self.range(of: "\\p{Han}", options: .regularExpression) != nil
     }
     
-    var containsLatinCharactersOnly: Bool {
+    public var containsLatinCharactersOnly: Bool {
         return self.range(of: "\\P{Latin}", options: .regularExpression) == nil
     }
 }
