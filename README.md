@@ -44,7 +44,7 @@ profileStackView.anchor(top: topAnchor, leading: pointStackView.trailingAnchor, 
 
 ## Author
 
-pewepw, harryng.gj@gmail.com
+Harry Ng, harryng.gj@gmail.com
 
 ## License
 
