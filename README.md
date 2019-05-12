@@ -22,7 +22,7 @@ pod 'HarryExtensions'
 
 ## Author
 
-pewepw, poripori1030@gmail.com
+pewepw, harryng.gj@gmail.com
 
 ## License
 
