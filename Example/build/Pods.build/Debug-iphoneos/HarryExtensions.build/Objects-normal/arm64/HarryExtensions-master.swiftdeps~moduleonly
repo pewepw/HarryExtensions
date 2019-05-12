@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "2b86ff9c53544f49efd96cbd649d4a82"
-build_time: [1557644286, 770655000]
+build_time: [1557645586, 553477000]
 inputs:
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Double.swift": [1557643149, 4198654]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+StackView.swift": [1557644169, 505421700]
@@ -15,7 +15,7 @@ inputs:
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+View.swift": [1557642701, 148036545]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Navigation.swift": [1557643149, 40840502]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension.swift": [1557644255, 767227257]
-  "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Anchor.swift": [1557644248, 607221483]
+  "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Anchor.swift": [1557644376, 597255698]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Label.swift": [1557644169, 473203535]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Array.swift": [1557643149, 13152542]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Image.swift": [1557643147, 203656146]

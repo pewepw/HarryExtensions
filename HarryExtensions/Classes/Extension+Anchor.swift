@@ -9,7 +9,7 @@
 import UIKit
 
 public struct AnchoredConstraints {
-    var top, leading, bottom, trailing, width, height: NSLayoutConstraint?
+    public var top, leading, bottom, trailing, width, height: NSLayoutConstraint?
 }
 
 extension UIView {
