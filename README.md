@@ -20,9 +20,9 @@ it, simply add the following line to your Podfile:
 pod 'HarryExtensions'
 ```
 
-## Usage
+## Basic Example
 
-#### 1. Stack vertically and horizontally
+#### 1. Stack vertically and horizontally, with UIView anchors extension
 
 ```swift
 let pointStackView = VerticalStackView(arrangedSubviews: [
