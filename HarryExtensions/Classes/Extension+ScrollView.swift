@@ -15,7 +15,7 @@ extension UITableViewController {
             headerView.setNeedsLayout()
             headerView.layoutIfNeeded()
             
-            let height = headerView.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
+            let height = headerView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height
             var frame = headerView.frame
             frame.size.height = height
             headerView.frame = frame
@@ -29,7 +29,7 @@ extension UITableViewController {
             footerView.setNeedsLayout()
             footerView.layoutIfNeeded()
             
-            let height = footerView.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
+            let height = footerView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height
             var frame = footerView.frame
             frame.size.height = height
             footerView.frame = frame

@@ -6,8 +6,6 @@
 //  Copyright © 2019 Harry. All rights reserved.
 //
 
-import UIKit
-
 extension UIImageView {
     public func downloadedFrom(url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFill) {
         contentMode = mode
@@ -31,7 +29,7 @@ extension UIImageView {
 
 extension UIViewController {
     public func convertImageToBase64(image: UIImage) -> String {
-        guard let imageData = UIImageJPEGRepresentation(image, 0.1) else { return "" }
+        guard let imageData = image.jpegData(compressionQuality: 0.1) else { return "" }
         return imageData.base64EncodedString(options: Data.Base64EncodingOptions.lineLength64Characters)
     }
     
