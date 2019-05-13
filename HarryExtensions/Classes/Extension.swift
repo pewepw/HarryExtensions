@@ -38,9 +38,9 @@ extension UIViewController {
     }
     
     public func randomAlphaNumericString(length: Int) -> String {
-        let allowedChars = "bcdfghjklmnpqrstvwxyz"
+        let allowedChars = "abcdfghjklmnpqrstvwxyz01234567890"
         let allowedCharsCount = UInt32(allowedChars.count)
-        var randomString = "n"
+        var randomString = ""
         
         for _ in 0..<length {
             let randomNum = Int(arc4random_uniform(allowedCharsCount))

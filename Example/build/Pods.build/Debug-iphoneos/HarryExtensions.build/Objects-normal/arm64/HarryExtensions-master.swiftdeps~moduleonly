@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "2b86ff9c53544f49efd96cbd649d4a82"
-build_time: [1557649860, 703929000]
+build_time: [1557725915, 968795000]
 inputs:
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Double.swift": [1557643149, 4198654]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+StackView.swift": [1557644169, 505421700]
@@ -10,7 +10,7 @@ inputs:
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Device.swift": [1557643149, 49453049]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+TextField.swift": [1557643149, 57541115]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+String.swift": [1557644169, 490938639]
-  "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Color.swift": [1557646162, 478052838]
+  "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Color.swift": [1557649862, 948225840]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Date.swift": [1557643149, 65112099]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+View.swift": [1557642701, 148036545]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Navigation.swift": [1557643149, 40840502]

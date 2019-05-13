@@ -152,8 +152,8 @@
 			children = (
 				98E84ACC2D120230DFAFD5C833E83726 /* Pod */,
 				DB8402680EC8377C3B15626F83D125C2 /* Support Files */,
-				4A183BBC2287F36C00381C52 /* Extension+Anchor.swift */,
 				4A183BC02287F3DE00381C52 /* Extension.swift */,
+				4A183BBC2287F36C00381C52 /* Extension+Anchor.swift */,
 				4A183BC22287F3F400381C52 /* Extension+Alert.swift */,
 				4A183BC42287F40000381C52 /* Extension+Array.swift */,
 				4A183BC62287F40C00381C52 /* Extension+Color.swift */,
