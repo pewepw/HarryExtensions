@@ -14,7 +14,12 @@ extension UIColor {
     }
     
     public convenience init(hex: String) {
-        let scanner = Scanner(string: hex)
+        var hexString = hex
+        if hex.hasPrefix("#") {
+            hexString = String(hex.dropFirst())
+        }
+        
+        let scanner = Scanner(string: hexString)
         scanner.scanLocation = 0
         
         var rgbValue: UInt64 = 0
