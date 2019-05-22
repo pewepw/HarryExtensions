@@ -120,7 +120,7 @@ extension UIView {
     }
     
     @discardableResult
-    public func withHeight(height: CGFloat) -> UIView {
+    public func withHeight(_ height: CGFloat) -> UIView {
         translatesAutoresizingMaskIntoConstraints = false
         heightAnchor.constraint(equalToConstant: height).isActive = true
         return self
