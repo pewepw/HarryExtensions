@@ -13,7 +13,6 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "CGFloat"
 - "HorizontalStackView"
-- "IntegerLiteralType"
 - "NSCoder"
 - !private "StringLiteralType"
 - "UIEdgeInsets"

@@ -26,6 +26,7 @@
 		4A183BDF2287F4C600381C52 /* Extension+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A183BDE2287F4C600381C52 /* Extension+TextField.swift */; };
 		4A183BE12287F4D100381C52 /* Extension+TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A183BE02287F4D100381C52 /* Extension+TextView.swift */; };
 		4A183BE32287F4DA00381C52 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A183BE22287F4DA00381C52 /* Extension+View.swift */; };
+		4A89DE7C22CCD5AD00DFB0D2 /* Extension+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A89DE7B22CCD5AD00DFB0D2 /* Extension+Button.swift */; };
 		545C28838985A528460BAB90CC715CB2 /* Pods-HarryExtensions_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A67F252DC84197A038519873ED814EBF /* Pods-HarryExtensions_Example-dummy.m */; };
 		6305DB80CF5A5D01C94480FF81137FD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		66BE54086BE5A62C8895922CFE125FA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
@@ -75,6 +76,7 @@
 		4A183BDE2287F4C600381C52 /* Extension+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+TextField.swift"; path = "HarryExtensions/Classes/Extension+TextField.swift"; sourceTree = "<group>"; };
 		4A183BE02287F4D100381C52 /* Extension+TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+TextView.swift"; path = "HarryExtensions/Classes/Extension+TextView.swift"; sourceTree = "<group>"; };
 		4A183BE22287F4DA00381C52 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+View.swift"; path = "HarryExtensions/Classes/Extension+View.swift"; sourceTree = "<group>"; };
+		4A89DE7B22CCD5AD00DFB0D2 /* Extension+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+Button.swift"; path = "HarryExtensions/Classes/Extension+Button.swift"; sourceTree = "<group>"; };
 		5E5E005BE91C0795FE7A77568FBDB832 /* Pods_HarryExtensions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HarryExtensions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F221278E4C337588435667E13E733A /* HarryExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HarryExtensions-umbrella.h"; sourceTree = "<group>"; };
 		637BDEFADD760DC81A5A1185C65C7695 /* Pods-HarryExtensions_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HarryExtensions_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				4A183BBC2287F36C00381C52 /* Extension+Anchor.swift */,
 				4A183BC22287F3F400381C52 /* Extension+Alert.swift */,
 				4A183BC42287F40000381C52 /* Extension+Array.swift */,
+				4A89DE7B22CCD5AD00DFB0D2 /* Extension+Button.swift */,
 				4A183BC62287F40C00381C52 /* Extension+Color.swift */,
 				4A183BC82287F41700381C52 /* Extension+Date.swift */,
 				4A183BCA2287F42600381C52 /* Extension+Device.swift */,
@@ -435,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A183BCD2287F43200381C52 /* Extension+Double.swift in Sources */,
+				4A89DE7C22CCD5AD00DFB0D2 /* Extension+Button.swift in Sources */,
 				4A183BDB2287F4B000381C52 /* Extension+StackView.swift in Sources */,
 				4A183BE12287F4D100381C52 /* Extension+TextView.swift in Sources */,
 				4A183BD92287F4A200381C52 /* Extension+ScrollView.swift in Sources */,

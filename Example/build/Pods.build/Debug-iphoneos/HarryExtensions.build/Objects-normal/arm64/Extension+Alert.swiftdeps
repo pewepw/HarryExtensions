@@ -8,7 +8,9 @@ provides-member:
 - ["So16UIViewControllerC", "showSuccessAlert"]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "BooleanLiteralType"
 - "String"
+- !private "StringLiteralType"
 - !private "UIAlertAction"
 - !private "UIAlertController"
 - "UIViewController"

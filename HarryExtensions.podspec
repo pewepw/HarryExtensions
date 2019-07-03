@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HarryExtensions'
-  s.version          = '0.2.4'
+  s.version          = '0.2.5'
   s.swift_version    = '4.2'
   s.summary          = 'All the good stuff.'
 
