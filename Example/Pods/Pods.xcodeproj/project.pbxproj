@@ -27,6 +27,7 @@
 		4A183BE12287F4D100381C52 /* Extension+TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A183BE02287F4D100381C52 /* Extension+TextView.swift */; };
 		4A183BE32287F4DA00381C52 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A183BE22287F4DA00381C52 /* Extension+View.swift */; };
 		4A89DE7C22CCD5AD00DFB0D2 /* Extension+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A89DE7B22CCD5AD00DFB0D2 /* Extension+Button.swift */; };
+		4ACBEF7A22E1612A00747752 /* Extension+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACBEF7922E1612A00747752 /* Extension+Storage.swift */; };
 		545C28838985A528460BAB90CC715CB2 /* Pods-HarryExtensions_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A67F252DC84197A038519873ED814EBF /* Pods-HarryExtensions_Example-dummy.m */; };
 		6305DB80CF5A5D01C94480FF81137FD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		66BE54086BE5A62C8895922CFE125FA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
@@ -77,6 +78,7 @@
 		4A183BE02287F4D100381C52 /* Extension+TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+TextView.swift"; path = "HarryExtensions/Classes/Extension+TextView.swift"; sourceTree = "<group>"; };
 		4A183BE22287F4DA00381C52 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+View.swift"; path = "HarryExtensions/Classes/Extension+View.swift"; sourceTree = "<group>"; };
 		4A89DE7B22CCD5AD00DFB0D2 /* Extension+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+Button.swift"; path = "HarryExtensions/Classes/Extension+Button.swift"; sourceTree = "<group>"; };
+		4ACBEF7922E1612A00747752 /* Extension+Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Extension+Storage.swift"; path = "HarryExtensions/Classes/Extension+Storage.swift"; sourceTree = "<group>"; };
 		5E5E005BE91C0795FE7A77568FBDB832 /* Pods_HarryExtensions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HarryExtensions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61F221278E4C337588435667E13E733A /* HarryExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HarryExtensions-umbrella.h"; sourceTree = "<group>"; };
 		637BDEFADD760DC81A5A1185C65C7695 /* Pods-HarryExtensions_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HarryExtensions_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				4A183BD62287F48E00381C52 /* Extension+Navigation.swift */,
 				4A183BD82287F4A200381C52 /* Extension+ScrollView.swift */,
 				4A183BDA2287F4B000381C52 /* Extension+StackView.swift */,
+				4ACBEF7922E1612A00747752 /* Extension+Storage.swift */,
 				4A183BDC2287F4BB00381C52 /* Extension+String.swift */,
 				4A183BDE2287F4C600381C52 /* Extension+TextField.swift */,
 				4A183BE02287F4D100381C52 /* Extension+TextView.swift */,
@@ -452,6 +455,7 @@
 				4A183BD72287F48E00381C52 /* Extension+Navigation.swift in Sources */,
 				4A183BC12287F3DE00381C52 /* Extension.swift in Sources */,
 				4A183BBD2287F36C00381C52 /* Extension+Anchor.swift in Sources */,
+				4ACBEF7A22E1612A00747752 /* Extension+Storage.swift in Sources */,
 				4A183BD52287F47800381C52 /* Extension+Label.swift in Sources */,
 				FF6A6846470D3A531191C0D6038F5B5F /* HarryExtensions-dummy.m in Sources */,
 				4A183BC52287F40000381C52 /* Extension+Array.swift in Sources */,

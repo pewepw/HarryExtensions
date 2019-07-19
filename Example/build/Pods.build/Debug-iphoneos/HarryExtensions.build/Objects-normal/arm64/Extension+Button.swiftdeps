@@ -7,6 +7,7 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
+- !private "FloatLiteralType"
 - !private "IntegerLiteralType"
 - "UIButton"
 - !private "UIEdgeInsets"
@@ -314,4 +315,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "92a1f9f8b446980d6625013b4d044fe5"
+interface-hash: "b3d495552f48a7331146eeff67628a27"

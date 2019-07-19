@@ -1,0 +1,440 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["10Foundation4DateV", ""]
+- ["So16UIViewControllerC", ""]
+- ["10Foundation4DateV", "convertToDayOfWeek"]
+- ["10Foundation4DateV", "convertToHourMinuteAmPm"]
+- ["10Foundation4DateV", "convertToHourMinute"]
+- ["10Foundation4DateV", "convertToDayMonthYear"]
+- ["10Foundation4DateV", "convertToDayShortMonth"]
+- ["10Foundation4DateV", "convertToDayShortMonthYear"]
+- ["10Foundation4DateV", "convertToFullDate"]
+- ["So16UIViewControllerC", "convertTimezoneToCurrent"]
+- ["So16UIViewControllerC", "timeAgoSince"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "+"
+- !private ">="
+- "AssignmentPrecedence"
+- !private "Calendar"
+- "CastingPrecedence"
+- "Date"
+- !private "DateFormatter"
+- !private "NSCalendar"
+- "String"
+- !private "TimeZone"
+- "UIViewController"
+depends-member:
+- !private ["s7CVarArgP", "Calendar"]
+- !private ["s7CVarArgP", "Date"]
+- !private ["s7CVarArgP", "DateFormatter"]
+- !private ["s7CVarArgP", "TimeZone"]
+- !private ["s7CVarArgP", "Unit"]
+- !private ["s7CVarArgP", "components"]
+- !private ["s7CVarArgP", "date"]
+- !private ["s7CVarArgP", "dateFormat"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "string"]
+- !private ["s7CVarArgP", "timeZone"]
+- !private ["10Foundation8CalendarV", "current"]
+- !private ["SL", "DateFormatter"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Calendar"]
+- !private ["s28CustomDebugStringConvertibleP", "Date"]
+- !private ["s28CustomDebugStringConvertibleP", "DateFormatter"]
+- !private ["s28CustomDebugStringConvertibleP", "TimeZone"]
+- !private ["s28CustomDebugStringConvertibleP", "Unit"]
+- !private ["s28CustomDebugStringConvertibleP", "components"]
+- !private ["s28CustomDebugStringConvertibleP", "current"]
+- !private ["s28CustomDebugStringConvertibleP", "date"]
+- !private ["s28CustomDebugStringConvertibleP", "dateFormat"]
+- !private ["s28CustomDebugStringConvertibleP", "day"]
+- !private ["s28CustomDebugStringConvertibleP", "hour"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "minute"]
+- !private ["s28CustomDebugStringConvertibleP", "month"]
+- !private ["s28CustomDebugStringConvertibleP", "second"]
+- !private ["s28CustomDebugStringConvertibleP", "string"]
+- !private ["s28CustomDebugStringConvertibleP", "timeZone"]
+- !private ["s28CustomDebugStringConvertibleP", "weekOfYear"]
+- !private ["s28CustomDebugStringConvertibleP", "year"]
+- !private ["s17CustomReflectableP", "DateFormatter"]
+- !private ["s17CustomReflectableP", "current"]
+- !private ["s17CustomReflectableP", "day"]
+- !private ["s17CustomReflectableP", "hour"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "minute"]
+- !private ["s17CustomReflectableP", "month"]
+- !private ["s17CustomReflectableP", "second"]
+- !private ["s17CustomReflectableP", "weekOfYear"]
+- !private ["s17CustomReflectableP", "year"]
+- !private ["s23CustomStringConvertibleP", "Calendar"]
+- !private ["s23CustomStringConvertibleP", "Date"]
+- !private ["s23CustomStringConvertibleP", "DateFormatter"]
+- !private ["s23CustomStringConvertibleP", "TimeZone"]
+- !private ["s23CustomStringConvertibleP", "Unit"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "components"]
+- !private ["s23CustomStringConvertibleP", "current"]
+- !private ["s23CustomStringConvertibleP", "date"]
+- !private ["s23CustomStringConvertibleP", "dateFormat"]
+- !private ["s23CustomStringConvertibleP", "day"]
+- !private ["s23CustomStringConvertibleP", "hour"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "minute"]
+- !private ["s23CustomStringConvertibleP", "month"]
+- !private ["s23CustomStringConvertibleP", "second"]
+- !private ["s23CustomStringConvertibleP", "string"]
+- !private ["s23CustomStringConvertibleP", "timeZone"]
+- !private ["s23CustomStringConvertibleP", "weekOfYear"]
+- !private ["s23CustomStringConvertibleP", "year"]
+- !private ["10Foundation4DateV", "DateFormatter"]
+- ["10Foundation4DateV", "String"]
+- ["10Foundation4DateV", "convertToDayMonthYear"]
+- ["10Foundation4DateV", "convertToDayOfWeek"]
+- ["10Foundation4DateV", "convertToDayShortMonth"]
+- ["10Foundation4DateV", "convertToDayShortMonthYear"]
+- ["10Foundation4DateV", "convertToFullDate"]
+- ["10Foundation4DateV", "convertToHourMinute"]
+- ["10Foundation4DateV", "convertToHourMinuteAmPm"]
+- !private ["10Foundation4DateV", "init"]
+- !private ["10Foundation14DateComponentsV", "day"]
+- !private ["10Foundation14DateComponentsV", "hour"]
+- !private ["10Foundation14DateComponentsV", "minute"]
+- !private ["10Foundation14DateComponentsV", "month"]
+- !private ["10Foundation14DateComponentsV", "second"]
+- !private ["10Foundation14DateComponentsV", "weekOfYear"]
+- !private ["10Foundation14DateComponentsV", "year"]
+- !private ["So15NSDateFormatterC", "date"]
+- !private ["So15NSDateFormatterC", "dateFormat"]
+- !private ["So15NSDateFormatterC", "init"]
+- !private ["So15NSDateFormatterC", "string"]
+- !private ["So15NSDateFormatterC", "timeZone"]
+- !private ["Se", "DateFormatter"]
+- !private ["Se", "current"]
+- !private ["Se", "day"]
+- !private ["Se", "hour"]
+- !private ["Se", "init"]
+- !private ["Se", "minute"]
+- !private ["Se", "month"]
+- !private ["Se", "second"]
+- !private ["Se", "weekOfYear"]
+- !private ["Se", "year"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "DateFormatter"]
+- !private ["SE", "current"]
+- !private ["SE", "day"]
+- !private ["SE", "hour"]
+- !private ["SE", "init"]
+- !private ["SE", "minute"]
+- !private ["SE", "month"]
+- !private ["SE", "second"]
+- !private ["SE", "weekOfYear"]
+- !private ["SE", "year"]
+- !private ["SQ", "Calendar"]
+- !private ["SQ", "Date"]
+- !private ["SQ", "DateFormatter"]
+- !private ["SQ", "TimeZone"]
+- !private ["SQ", "Unit"]
+- !private ["SQ", "components"]
+- !private ["SQ", "current"]
+- !private ["SQ", "date"]
+- !private ["SQ", "dateFormat"]
+- !private ["SQ", "day"]
+- !private ["SQ", "hour"]
+- !private ["SQ", "init"]
+- !private ["SQ", "minute"]
+- !private ["SQ", "month"]
+- !private ["SQ", "second"]
+- !private ["SQ", "string"]
+- !private ["SQ", "timeZone"]
+- !private ["SQ", "weekOfYear"]
+- !private ["SQ", "year"]
+- !private ["s25ExpressibleByArrayLiteralP", "day"]
+- !private ["s25ExpressibleByArrayLiteralP", "hour"]
+- !private ["s25ExpressibleByArrayLiteralP", "minute"]
+- !private ["s25ExpressibleByArrayLiteralP", "month"]
+- !private ["s25ExpressibleByArrayLiteralP", "second"]
+- !private ["s25ExpressibleByArrayLiteralP", "weekOfYear"]
+- !private ["s25ExpressibleByArrayLiteralP", "year"]
+- !private ["So11NSFormatterC", "date"]
+- !private ["So11NSFormatterC", "dateFormat"]
+- !private ["So11NSFormatterC", "init"]
+- !private ["So11NSFormatterC", "string"]
+- !private ["So11NSFormatterC", "timeZone"]
+- !private ["SH", "Calendar"]
+- !private ["SH", "Date"]
+- !private ["SH", "DateFormatter"]
+- !private ["SH", "TimeZone"]
+- !private ["SH", "Unit"]
+- !private ["SH", "components"]
+- !private ["SH", "current"]
+- !private ["SH", "date"]
+- !private ["SH", "dateFormat"]
+- !private ["SH", "day"]
+- !private ["SH", "hour"]
+- !private ["SH", "init"]
+- !private ["SH", "minute"]
+- !private ["SH", "month"]
+- !private ["SH", "second"]
+- !private ["SH", "string"]
+- !private ["SH", "timeZone"]
+- !private ["SH", "weekOfYear"]
+- !private ["SH", "year"]
+- !private ["So10NSCalendarC", "Unit"]
+- !private ["So10NSCalendarC", "components"]
+- !private ["So8NSCodingP", "Calendar"]
+- !private ["So8NSCodingP", "Date"]
+- !private ["So8NSCodingP", "DateFormatter"]
+- !private ["So8NSCodingP", "TimeZone"]
+- !private ["So8NSCodingP", "Unit"]
+- !private ["So8NSCodingP", "components"]
+- !private ["So8NSCodingP", "date"]
+- !private ["So8NSCodingP", "dateFormat"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "string"]
+- !private ["So8NSCodingP", "timeZone"]
+- !private ["So9NSCopyingP", "Unit"]
+- !private ["So9NSCopyingP", "components"]
+- !private ["So9NSCopyingP", "date"]
+- !private ["So9NSCopyingP", "dateFormat"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "string"]
+- !private ["So9NSCopyingP", "timeZone"]
+- !private ["So26NSExtensionRequestHandlingP", "Calendar"]
+- !private ["So26NSExtensionRequestHandlingP", "Date"]
+- !private ["So26NSExtensionRequestHandlingP", "DateFormatter"]
+- !private ["So26NSExtensionRequestHandlingP", "TimeZone"]
+- !private ["So8NSObjectC", "Calendar"]
+- ["So8NSObjectC", "Date"]
+- !private ["So8NSObjectC", "DateFormatter"]
+- !private ["So8NSObjectC", "NSCalendar"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "TimeZone"]
+- !private ["So8NSObjectC", "Unit"]
+- !private ["So8NSObjectC", "components"]
+- ["So8NSObjectC", "convertTimezoneToCurrent"]
+- !private ["So8NSObjectC", "date"]
+- !private ["So8NSObjectC", "dateFormat"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "string"]
+- ["So8NSObjectC", "timeAgoSince"]
+- !private ["So8NSObjectC", "timeZone"]
+- !private ["So8NSObjectP", "Calendar"]
+- !private ["So8NSObjectP", "Date"]
+- !private ["So8NSObjectP", "DateFormatter"]
+- !private ["So8NSObjectP", "TimeZone"]
+- !private ["So8NSObjectP", "Unit"]
+- !private ["So8NSObjectP", "components"]
+- !private ["So8NSObjectP", "date"]
+- !private ["So8NSObjectP", "dateFormat"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "string"]
+- !private ["So8NSObjectP", "timeZone"]
+- !private ["So14NSSecureCodingP", "Unit"]
+- !private ["So14NSSecureCodingP", "components"]
+- !private ["s9OptionSetP", "day"]
+- !private ["s9OptionSetP", "hour"]
+- !private ["s9OptionSetP", "minute"]
+- !private ["s9OptionSetP", "month"]
+- !private ["s9OptionSetP", "second"]
+- !private ["s9OptionSetP", "weekOfYear"]
+- !private ["s9OptionSetP", "year"]
+- !private ["SY", "day"]
+- !private ["SY", "hour"]
+- !private ["SY", "minute"]
+- !private ["SY", "month"]
+- !private ["SY", "second"]
+- !private ["SY", "weekOfYear"]
+- !private ["SY", "year"]
+- !private ["10Foundation20ReferenceConvertibleP", "DateFormatter"]
+- !private ["10Foundation20ReferenceConvertibleP", "current"]
+- !private ["10Foundation20ReferenceConvertibleP", "day"]
+- !private ["10Foundation20ReferenceConvertibleP", "hour"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "minute"]
+- !private ["10Foundation20ReferenceConvertibleP", "month"]
+- !private ["10Foundation20ReferenceConvertibleP", "second"]
+- !private ["10Foundation20ReferenceConvertibleP", "weekOfYear"]
+- !private ["10Foundation20ReferenceConvertibleP", "year"]
+- !private ["s10SetAlgebraP", "day"]
+- !private ["s10SetAlgebraP", "hour"]
+- !private ["s10SetAlgebraP", "minute"]
+- !private ["s10SetAlgebraP", "month"]
+- !private ["s10SetAlgebraP", "second"]
+- !private ["s10SetAlgebraP", "weekOfYear"]
+- !private ["s10SetAlgebraP", "year"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["10Foundation8TimeZoneV", "current"]
+- !private ["10Foundation8TimeZoneV", "init"]
+- !private ["So21UIAppearanceContainerP", "Calendar"]
+- !private ["So21UIAppearanceContainerP", "Date"]
+- !private ["So21UIAppearanceContainerP", "DateFormatter"]
+- !private ["So21UIAppearanceContainerP", "TimeZone"]
+- !private ["So18UIContentContainerP", "Calendar"]
+- !private ["So18UIContentContainerP", "Date"]
+- !private ["So18UIContentContainerP", "DateFormatter"]
+- !private ["So18UIContentContainerP", "TimeZone"]
+- !private ["So18UIFocusEnvironmentP", "Calendar"]
+- !private ["So18UIFocusEnvironmentP", "Date"]
+- !private ["So18UIFocusEnvironmentP", "DateFormatter"]
+- !private ["So18UIFocusEnvironmentP", "TimeZone"]
+- !private ["So30UIPasteConfigurationSupportingP", "Calendar"]
+- !private ["So30UIPasteConfigurationSupportingP", "Date"]
+- !private ["So30UIPasteConfigurationSupportingP", "DateFormatter"]
+- !private ["So30UIPasteConfigurationSupportingP", "TimeZone"]
+- !private ["So11UIResponderC", "Calendar"]
+- ["So11UIResponderC", "Date"]
+- !private ["So11UIResponderC", "DateFormatter"]
+- !private ["So11UIResponderC", "NSCalendar"]
+- ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "TimeZone"]
+- ["So11UIResponderC", "convertTimezoneToCurrent"]
+- ["So11UIResponderC", "timeAgoSince"]
+- !private ["So30UIResponderStandardEditActionsP", "Calendar"]
+- !private ["So30UIResponderStandardEditActionsP", "Date"]
+- !private ["So30UIResponderStandardEditActionsP", "DateFormatter"]
+- !private ["So30UIResponderStandardEditActionsP", "TimeZone"]
+- !private ["So16UIStateRestoringP", "Calendar"]
+- !private ["So16UIStateRestoringP", "Date"]
+- !private ["So16UIStateRestoringP", "DateFormatter"]
+- !private ["So16UIStateRestoringP", "TimeZone"]
+- !private ["So18UITraitEnvironmentP", "Calendar"]
+- !private ["So18UITraitEnvironmentP", "Date"]
+- !private ["So18UITraitEnvironmentP", "DateFormatter"]
+- !private ["So18UITraitEnvironmentP", "TimeZone"]
+- !private ["So23UIUserActivityRestoringP", "Calendar"]
+- !private ["So23UIUserActivityRestoringP", "Date"]
+- !private ["So23UIUserActivityRestoringP", "DateFormatter"]
+- !private ["So23UIUserActivityRestoringP", "TimeZone"]
+- !private ["So16UIViewControllerC", "Calendar"]
+- ["So16UIViewControllerC", "Date"]
+- !private ["So16UIViewControllerC", "DateFormatter"]
+- !private ["So16UIViewControllerC", "NSCalendar"]
+- ["So16UIViewControllerC", "String"]
+- !private ["So16UIViewControllerC", "TimeZone"]
+- ["So16UIViewControllerC", "convertTimezoneToCurrent"]
+- ["So16UIViewControllerC", "timeAgoSince"]
+- !private ["So14NSCalendarUnitV", "day"]
+- !private ["So14NSCalendarUnitV", "hour"]
+- !private ["So14NSCalendarUnitV", "minute"]
+- !private ["So14NSCalendarUnitV", "month"]
+- !private ["So14NSCalendarUnitV", "second"]
+- !private ["So14NSCalendarUnitV", "weekOfYear"]
+- !private ["So14NSCalendarUnitV", "year"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "DateFormatter"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "Unit"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "components"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Calendar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Date"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "DateFormatter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "TimeZone"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Unit"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "components"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "date"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dateFormat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "string"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "timeZone"]
+- !private ["10Foundation14_MutableBoxingP", "current"]
+- !private ["10Foundation14_MutableBoxingP", "day"]
+- !private ["10Foundation14_MutableBoxingP", "hour"]
+- !private ["10Foundation14_MutableBoxingP", "minute"]
+- !private ["10Foundation14_MutableBoxingP", "month"]
+- !private ["10Foundation14_MutableBoxingP", "second"]
+- !private ["10Foundation14_MutableBoxingP", "weekOfYear"]
+- !private ["10Foundation14_MutableBoxingP", "year"]
+- !private ["s21_ObjectiveCBridgeableP", "DateFormatter"]
+- !private ["s21_ObjectiveCBridgeableP", "current"]
+- !private ["s21_ObjectiveCBridgeableP", "day"]
+- !private ["s21_ObjectiveCBridgeableP", "hour"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "minute"]
+- !private ["s21_ObjectiveCBridgeableP", "month"]
+- !private ["s21_ObjectiveCBridgeableP", "second"]
+- !private ["s21_ObjectiveCBridgeableP", "weekOfYear"]
+- !private ["s21_ObjectiveCBridgeableP", "year"]
+depends-nominal:
+- !private "s7CVarArgP"
+- !private "10Foundation8CalendarV"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- "10Foundation4DateV"
+- !private "10Foundation14DateComponentsV"
+- !private "So15NSDateFormatterC"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "So11NSFormatterC"
+- !private "SH"
+- !private "So10NSCalendarC"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "s9OptionSetP"
+- !private "SY"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "s10SetAlgebraP"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "10Foundation8TimeZoneV"
+- !private "So21UIAppearanceContainerP"
+- !private "So18UIContentContainerP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So16UIStateRestoringP"
+- !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
+- "So16UIViewControllerC"
+- !private "So14NSCalendarUnitV"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation14_MutableBoxingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/harry/Desktop/iOS-Dev/HarryExtensions/Example/Pods/Target Support Files/HarryExtensions/HarryExtensions-umbrella.h"
+- "/Users/harry/Desktop/iOS-Dev/HarryExtensions/Example/build/Pods.build/Debug-iphoneos/HarryExtensions.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "c41d67c94b74f75d555ebe52912c93cd"

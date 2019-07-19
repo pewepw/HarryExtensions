@@ -33,21 +33,13 @@ extension UIView {
         layer.borderColor = color.cgColor
         return self
     }
-    
-    //    eg. exampleView.roundCorners(corners: [.topRight, .bottomRight], radius: 10)
-    public func roundCorners(corners: UIRectCorner, radius: CGFloat) {
-        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
-        let mask = CAShapeLayer()
-        mask.path = path.cgPath
-        layer.mask = mask
-    }
 }
 
 extension UIViewController {
     public func addLine(view : UIView, position : LINE_POSITION, color: UIColor, width: Double) {
         let lineView = UIView()
         lineView.backgroundColor = color
-        lineView.translatesAutoresizingMaskIntoConstraints = false // This is important!
+        lineView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(lineView)
         
         let metrics = ["width" : NSNumber(value: width)]
