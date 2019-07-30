@@ -9,7 +9,7 @@
 import UIKit
 
 extension String {
-    public func loadUrlEvenWithSpace() -> String {
+    public func loadUrlWithSpace() -> String {
         return addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
     }
     
@@ -19,7 +19,7 @@ extension String {
     }
     
     public var htmlToAttributedString: NSAttributedString? {
-        guard let data = data(using: .utf8) else { return NSAttributedString() }
+        guard let data = data(using: .utf16) else { return NSAttributedString() }
         do {
             return try NSAttributedString(data: data, options: [NSAttributedString.DocumentReadingOptionKey.documentType:  NSAttributedString.DocumentType.html], documentAttributes: nil)
         } catch {
