@@ -3,7 +3,7 @@ provides-top-level:
 provides-nominal:
 provides-member:
 - ["SS", ""]
-- ["SS", "loadUrlEvenWithSpace"]
+- ["SS", "loadUrlWithSpace"]
 - ["SS", "isNumber"]
 - ["SS", "htmlToAttributedString"]
 - ["SS", "htmlToString"]
@@ -21,9 +21,12 @@ depends-top-level:
 - "Bool"
 - "CGFloat"
 - !private "CharacterSet"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
 - "NSAttributedString"
 - !private "NSCharacterSet"
 - "String"
+- !private "StringLiteralType"
 - !private "UnicodeScalarType"
 - !private "print"
 depends-member:
@@ -136,6 +139,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "rawValue"]
 - !private ["s23CustomStringConvertibleP", "string"]
 - !private ["s23CustomStringConvertibleP", "urlQueryAllowed"]
+- !private ["s23CustomStringConvertibleP", "utf16"]
 - !private ["s23CustomStringConvertibleP", "utf8"]
 - !private ["Se", "CharacterSet"]
 - !private ["Se", "Encoding"]
@@ -171,6 +175,7 @@ depends-member:
 - !private ["SE", "rangeOfCharacter"]
 - !private ["SE", "urlQueryAllowed"]
 - !private ["SS10FoundationE8EncodingV", "rawValue"]
+- !private ["SS10FoundationE8EncodingV", "utf16"]
 - !private ["SS10FoundationE8EncodingV", "utf8"]
 - !private ["SQ", "CharacterSet"]
 - !private ["SQ", "DocumentReadingOptionKey"]
@@ -196,6 +201,7 @@ depends-member:
 - !private ["SQ", "regularExpression"]
 - !private ["SQ", "string"]
 - !private ["SQ", "urlQueryAllowed"]
+- !private ["SQ", "utf16"]
 - !private ["SQ", "utf8"]
 - !private ["s25ExpressibleByArrayLiteralP", "inverted"]
 - !private ["s25ExpressibleByArrayLiteralP", "regularExpression"]
@@ -271,6 +277,7 @@ depends-member:
 - !private ["SH", "rawValue"]
 - !private ["SH", "string"]
 - !private ["SH", "urlQueryAllowed"]
+- !private ["SH", "utf16"]
 - !private ["SH", "utf8"]
 - !private ["s25LosslessStringConvertibleP", "CharacterSet"]
 - !private ["s25LosslessStringConvertibleP", "Encoding"]
@@ -411,6 +418,7 @@ depends-member:
 - !private ["SY", "html"]
 - !private ["SY", "rawValue"]
 - !private ["SY", "regularExpression"]
+- !private ["SY", "utf16"]
 - !private ["SY", "utf8"]
 - !private ["10Foundation20ReferenceConvertibleP", "inverted"]
 - !private ["10Foundation20ReferenceConvertibleP", "urlQueryAllowed"]
@@ -445,7 +453,7 @@ depends-member:
 - ["SS", "htmlToString"]
 - !private ["SS", "isEmpty"]
 - ["SS", "isNumber"]
-- ["SS", "loadUrlEvenWithSpace"]
+- ["SS", "loadUrlWithSpace"]
 - !private ["SS", "print"]
 - !private ["SS", "range"]
 - !private ["SS", "rangeOfCharacter"]
@@ -662,16 +670,16 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 - "/Users/harry/Desktop/iOS-Dev/HarryExtensions/Example/Pods/Target Support Files/HarryExtensions/HarryExtensions-umbrella.h"
 - "/Users/harry/Desktop/iOS-Dev/HarryExtensions/Example/build/Pods.build/Debug-iphoneos/HarryExtensions.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "61fee7e64187a705734dd35aac7cb3e2"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "22ae9a814396059e73a7330893b50735"

@@ -31,13 +31,13 @@ extension String {
         return htmlToAttributedString?.string ?? ""
     }
     
-    public func htmlAttributed(family: String?, size: CGFloat) -> NSAttributedString? {
+    public func htmlAttributed(family: String?, size: CGFloat, colorHex: String?) -> NSAttributedString? {
         do {
             let htmlCSSString = "<style>" +
                 "html *" +
                 "{" +
                 "font-size: \(size)pt !important;" +
-                "color: #9A9A9A !important;" +
+                "color: #\(colorHex ?? "9A9A9A") !important;" +
                 "font-family: \(family ?? "Helvetica"), Helvetica !important;" +
             "}</style> \(self)"
             

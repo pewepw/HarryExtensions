@@ -1,11 +1,409 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "StorageType"
 provides-nominal:
+- "15HarryExtensions11StorageTypeO"
 provides-member:
+- ["15HarryExtensions11StorageTypeO", ""]
+- ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "filePath"]
+- ["So16UIViewControllerC", "storeImage"]
+- ["So16UIViewControllerC", "retrieveImage"]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "+"
+- "=="
+- "CastingPrecedence"
+- !private "Data"
+- !private "FileManager"
+- "StorageType"
+- "String"
+- !private "StringLiteralType"
+- "UIImage"
+- "UIViewController"
+- "URL"
+- !private "UserDefaults"
+- !private "print"
 depends-member:
+- !private ["Sa", "first"]
+- !private ["SK", "first"]
+- !private ["SK", "write"]
+- !private ["s7CVarArgP", "FileManager"]
+- !private ["s7CVarArgP", "SearchPathDomainMask"]
+- !private ["s7CVarArgP", "UIImage"]
+- !private ["s7CVarArgP", "UserDefaults"]
+- !private ["s7CVarArgP", "contents"]
+- !private ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "filePath"]
+- !private ["s7CVarArgP", "first"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "object"]
+- !private ["s7CVarArgP", "pngData"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "set"]
+- !private ["s7CVarArgP", "standard"]
+- !private ["s7CVarArgP", "urls"]
+- !private ["Sl", "first"]
+- !private ["Sl", "write"]
+- !private ["10Foundation15ContiguousBytesP", "first"]
+- !private ["10Foundation15ContiguousBytesP", "write"]
+- !private ["s28CustomDebugStringConvertibleP", "FileManager"]
+- !private ["s28CustomDebugStringConvertibleP", "SearchPathDomainMask"]
+- !private ["s28CustomDebugStringConvertibleP", "UIImage"]
+- !private ["s28CustomDebugStringConvertibleP", "UserDefaults"]
+- !private ["s28CustomDebugStringConvertibleP", "appendingPathComponent"]
+- !private ["s28CustomDebugStringConvertibleP", "contents"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "filePath"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "object"]
+- !private ["s28CustomDebugStringConvertibleP", "path"]
+- !private ["s28CustomDebugStringConvertibleP", "pngData"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "set"]
+- !private ["s28CustomDebugStringConvertibleP", "standard"]
+- !private ["s28CustomDebugStringConvertibleP", "urls"]
+- !private ["s28CustomDebugStringConvertibleP", "write"]
+- !private ["s17CustomReflectableP", "first"]
+- !private ["s17CustomReflectableP", "write"]
+- !private ["s23CustomStringConvertibleP", "FileManager"]
+- !private ["s23CustomStringConvertibleP", "SearchPathDomainMask"]
+- !private ["s23CustomStringConvertibleP", "UIImage"]
+- !private ["s23CustomStringConvertibleP", "UserDefaults"]
+- !private ["s23CustomStringConvertibleP", "appendingPathComponent"]
+- !private ["s23CustomStringConvertibleP", "contents"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- !private ["s23CustomStringConvertibleP", "filePath"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "object"]
+- !private ["s23CustomStringConvertibleP", "path"]
+- !private ["s23CustomStringConvertibleP", "pngData"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "set"]
+- !private ["s23CustomStringConvertibleP", "standard"]
+- !private ["s23CustomStringConvertibleP", "urls"]
+- !private ["s23CustomStringConvertibleP", "write"]
+- !private ["10Foundation4DataV", "write"]
+- !private ["10Foundation12DataProtocolP", "first"]
+- !private ["10Foundation12DataProtocolP", "write"]
+- !private ["Se", "appendingPathComponent"]
+- !private ["Se", "first"]
+- !private ["Se", "path"]
+- !private ["Se", "write"]
+- !private ["SE", "appendingPathComponent"]
+- !private ["SE", "first"]
+- !private ["SE", "path"]
+- !private ["SE", "write"]
+- ["SQ", "=="]
+- !private ["SQ", "FileManager"]
+- !private ["SQ", "SearchPathDomainMask"]
+- !private ["SQ", "UIImage"]
+- !private ["SQ", "UserDefaults"]
+- ["SQ", ""]
+- ["SQ", "_rawHashValue"]
+- !private ["SQ", "appendingPathComponent"]
+- !private ["SQ", "atomic"]
+- !private ["SQ", "contents"]
+- !private ["SQ", "default"]
+- !private ["SQ", "documentDirectory"]
+- !private ["SQ", "filePath"]
+- ["SQ", "fileSystem"]
+- !private ["SQ", "first"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- !private ["SQ", "init"]
+- !private ["SQ", "object"]
+- !private ["SQ", "path"]
+- !private ["SQ", "pngData"]
+- !private ["SQ", "print"]
+- !private ["SQ", "set"]
+- !private ["SQ", "standard"]
+- !private ["SQ", "urls"]
+- ["SQ", "userDefaults"]
+- !private ["SQ", "userDomainMask"]
+- !private ["SQ", "write"]
+- !private ["s25ExpressibleByArrayLiteralP", "atomic"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- !private ["s25ExpressibleByArrayLiteralP", "userDomainMask"]
+- !private ["So13NSFileManagerC", "SearchPathDomainMask"]
+- !private ["So13NSFileManagerC", "contents"]
+- !private ["So13NSFileManagerC", "default"]
+- !private ["So13NSFileManagerC", "urls"]
+- ["SH", "=="]
+- !private ["SH", "FileManager"]
+- !private ["SH", "SearchPathDomainMask"]
+- !private ["SH", "UIImage"]
+- !private ["SH", "UserDefaults"]
+- ["SH", ""]
+- ["SH", "_rawHashValue"]
+- !private ["SH", "appendingPathComponent"]
+- !private ["SH", "contents"]
+- !private ["SH", "default"]
+- !private ["SH", "documentDirectory"]
+- !private ["SH", "filePath"]
+- ["SH", "fileSystem"]
+- !private ["SH", "first"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- !private ["SH", "init"]
+- !private ["SH", "object"]
+- !private ["SH", "path"]
+- !private ["SH", "pngData"]
+- !private ["SH", "print"]
+- !private ["SH", "set"]
+- !private ["SH", "standard"]
+- !private ["SH", "urls"]
+- ["SH", "userDefaults"]
+- !private ["SH", "write"]
+- !private ["s6HasherV", "combine"]
+- !private ["SM", "first"]
+- !private ["SM", "write"]
+- !private ["10Foundation19MutableDataProtocolP", "first"]
+- !private ["10Foundation19MutableDataProtocolP", "write"]
+- !private ["So8NSCodingP", "FileManager"]
+- !private ["So8NSCodingP", "UIImage"]
+- !private ["So8NSCodingP", "UserDefaults"]
+- !private ["So8NSCodingP", "filePath"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "pngData"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "FileManager"]
+- !private ["So26NSExtensionRequestHandlingP", "UIImage"]
+- !private ["So26NSExtensionRequestHandlingP", "UserDefaults"]
+- !private ["So26NSExtensionRequestHandlingP", "filePath"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "pngData"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "pngData"]
+- !private ["So8NSObjectC", "Data"]
+- !private ["So8NSObjectC", "FileManager"]
+- !private ["So8NSObjectC", "SearchPathDomainMask"]
+- ["So8NSObjectC", "StorageType"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UIImage"]
+- ["So8NSObjectC", "URL"]
+- !private ["So8NSObjectC", "UserDefaults"]
+- !private ["So8NSObjectC", "contents"]
+- !private ["So8NSObjectC", "default"]
+- ["So8NSObjectC", "filePath"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "object"]
+- !private ["So8NSObjectC", "pngData"]
+- !private ["So8NSObjectC", "print"]
+- ["So8NSObjectC", "retrieveImage"]
+- !private ["So8NSObjectC", "set"]
+- !private ["So8NSObjectC", "standard"]
+- ["So8NSObjectC", "storeImage"]
+- !private ["So8NSObjectC", "urls"]
+- !private ["So8NSObjectP", "FileManager"]
+- !private ["So8NSObjectP", "SearchPathDomainMask"]
+- !private ["So8NSObjectP", "UIImage"]
+- !private ["So8NSObjectP", "UserDefaults"]
+- !private ["So8NSObjectP", "contents"]
+- !private ["So8NSObjectP", "default"]
+- !private ["So8NSObjectP", "filePath"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "object"]
+- !private ["So8NSObjectP", "pngData"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "set"]
+- !private ["So8NSObjectP", "standard"]
+- !private ["So8NSObjectP", "urls"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "pngData"]
+- !private ["s9OptionSetP", "atomic"]
+- !private ["s9OptionSetP", "userDomainMask"]
+- !private ["Sk", "first"]
+- !private ["Sk", "write"]
+- !private ["Sm", "first"]
+- !private ["Sm", "write"]
+- !private ["SY", "atomic"]
+- !private ["SY", "documentDirectory"]
+- !private ["SY", "userDomainMask"]
+- !private ["10Foundation20ReferenceConvertibleP", "appendingPathComponent"]
+- !private ["10Foundation20ReferenceConvertibleP", "path"]
+- !private ["10Foundation20ReferenceConvertibleP", "write"]
+- !private ["So21NSSearchPathDirectoryV", "documentDirectory"]
+- !private ["So22NSSearchPathDomainMaskV", "userDomainMask"]
+- !private ["ST", "first"]
+- !private ["ST", "write"]
+- !private ["s10SetAlgebraP", "atomic"]
+- !private ["s10SetAlgebraP", "userDomainMask"]
+- ["15HarryExtensions11StorageTypeO", "=="]
+- ["15HarryExtensions11StorageTypeO", "__derived_enum_equals"]
+- ["15HarryExtensions11StorageTypeO", "_rawHashValue"]
+- ["15HarryExtensions11StorageTypeO", "deinit"]
+- ["15HarryExtensions11StorageTypeO", "fileSystem"]
+- ["15HarryExtensions11StorageTypeO", "hash"]
+- ["15HarryExtensions11StorageTypeO", "hashValue"]
+- ["15HarryExtensions11StorageTypeO", "userDefaults"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "pngData"]
+- !private ["So21UIAppearanceContainerP", "FileManager"]
+- !private ["So21UIAppearanceContainerP", "UIImage"]
+- !private ["So21UIAppearanceContainerP", "UserDefaults"]
+- !private ["So21UIAppearanceContainerP", "filePath"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So18UIContentContainerP", "FileManager"]
+- !private ["So18UIContentContainerP", "UIImage"]
+- !private ["So18UIContentContainerP", "UserDefaults"]
+- !private ["So18UIContentContainerP", "filePath"]
+- !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIFocusEnvironmentP", "FileManager"]
+- !private ["So18UIFocusEnvironmentP", "UIImage"]
+- !private ["So18UIFocusEnvironmentP", "UserDefaults"]
+- !private ["So18UIFocusEnvironmentP", "filePath"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So7UIImageC", "init"]
+- !private ["So7UIImageC", "pngData"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "pngData"]
+- !private ["So30UIPasteConfigurationSupportingP", "FileManager"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "UserDefaults"]
+- !private ["So30UIPasteConfigurationSupportingP", "filePath"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So11UIResponderC", "Data"]
+- !private ["So11UIResponderC", "FileManager"]
+- ["So11UIResponderC", "StorageType"]
+- ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "UIImage"]
+- ["So11UIResponderC", "URL"]
+- !private ["So11UIResponderC", "UserDefaults"]
+- ["So11UIResponderC", "filePath"]
+- !private ["So11UIResponderC", "print"]
+- ["So11UIResponderC", "retrieveImage"]
+- ["So11UIResponderC", "storeImage"]
+- !private ["So30UIResponderStandardEditActionsP", "FileManager"]
+- !private ["So30UIResponderStandardEditActionsP", "UIImage"]
+- !private ["So30UIResponderStandardEditActionsP", "UserDefaults"]
+- !private ["So30UIResponderStandardEditActionsP", "filePath"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So16UIStateRestoringP", "FileManager"]
+- !private ["So16UIStateRestoringP", "UIImage"]
+- !private ["So16UIStateRestoringP", "UserDefaults"]
+- !private ["So16UIStateRestoringP", "filePath"]
+- !private ["So16UIStateRestoringP", "print"]
+- !private ["So18UITraitEnvironmentP", "FileManager"]
+- !private ["So18UITraitEnvironmentP", "UIImage"]
+- !private ["So18UITraitEnvironmentP", "UserDefaults"]
+- !private ["So18UITraitEnvironmentP", "filePath"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So23UIUserActivityRestoringP", "FileManager"]
+- !private ["So23UIUserActivityRestoringP", "UIImage"]
+- !private ["So23UIUserActivityRestoringP", "UserDefaults"]
+- !private ["So23UIUserActivityRestoringP", "filePath"]
+- !private ["So23UIUserActivityRestoringP", "print"]
+- !private ["So16UIViewControllerC", "Data"]
+- !private ["So16UIViewControllerC", "FileManager"]
+- ["So16UIViewControllerC", "StorageType"]
+- ["So16UIViewControllerC", "String"]
+- ["So16UIViewControllerC", "UIImage"]
+- ["So16UIViewControllerC", "URL"]
+- !private ["So16UIViewControllerC", "UserDefaults"]
+- ["So16UIViewControllerC", "filePath"]
+- !private ["So16UIViewControllerC", "print"]
+- ["So16UIViewControllerC", "retrieveImage"]
+- ["So16UIViewControllerC", "storeImage"]
+- !private ["10Foundation3URLV", "appendingPathComponent"]
+- !private ["10Foundation3URLV", "path"]
+- !private ["So14NSUserDefaultsC", "object"]
+- !private ["So14NSUserDefaultsC", "set"]
+- !private ["So14NSUserDefaultsC", "standard"]
+- !private ["So20NSDataWritingOptionsV", "atomic"]
+- !private ["s14_ArrayProtocolP", "first"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "appendingPathComponent"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "path"]
+- !private ["s24_DestructorSafeContainerP", "first"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "appendingPathComponent"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "path"]
+- !private ["s26_ExpressibleByImageLiteralP", "init"]
+- !private ["s26_ExpressibleByImageLiteralP", "pngData"]
+- !private ["s19_HasContiguousBytesP", "first"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FileManager"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SearchPathDomainMask"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UserDefaults"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "contents"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "filePath"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "object"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pngData"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "set"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "urls"]
+- !private ["s21_ObjectiveCBridgeableP", "appendingPathComponent"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
+- !private ["s21_ObjectiveCBridgeableP", "path"]
+- !private ["s21_ObjectiveCBridgeableP", "write"]
 depends-nominal:
+- !private "Sa"
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation4DataV"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "So13NSFileManagerC"
+- "SH"
+- !private "s6HasherV"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "s9OptionSetP"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "So21NSSearchPathDirectoryV"
+- !private "So22NSSearchPathDomainMaskV"
+- !private "ST"
+- !private "s10SetAlgebraP"
+- "15HarryExtensions11StorageTypeO"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So21UIAppearanceContainerP"
+- !private "So18UIContentContainerP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So7UIImageC"
+- !private "So39UIItemProviderPresentationSizeProvidingP"
+- !private "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So16UIStateRestoringP"
+- !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
+- "So16UIViewControllerC"
+- !private "10Foundation3URLV"
+- !private "So14NSUserDefaultsC"
+- !private "So20NSDataWritingOptionsV"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- !private "s26_ExpressibleByImageLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
@@ -22,16 +420,16 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 - "/Users/harry/Desktop/iOS-Dev/HarryExtensions/Example/Pods/Target Support Files/HarryExtensions/HarryExtensions-umbrella.h"
 - "/Users/harry/Desktop/iOS-Dev/HarryExtensions/Example/build/Pods.build/Debug-iphoneos/HarryExtensions.build/unextended-module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5bf39d8b5f0094ca83c744a0da4fb204"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "897af887009f780fddf55a7c457c4428"

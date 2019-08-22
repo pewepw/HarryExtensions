@@ -241,6 +241,8 @@ SWIFT_CLASS("_TtC15HarryExtensions19HorizontalStackView")
 
 
 
+
+
 SWIFT_CLASS("_TtC15HarryExtensions17VerticalStackView")
 @interface VerticalStackView : UIStackView
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
