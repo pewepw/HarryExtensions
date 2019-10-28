@@ -20,7 +20,7 @@ extension UIView {
         }
     }
     
-    public func addShadow(opacity: Float = 0, radius: CGFloat = 0, offset: CGSize = .zero, color: UIColor = .black) {
+    public func setupShadow(opacity: Float = 0, radius: CGFloat = 0, offset: CGSize = .zero, color: UIColor = .black) {
         layer.shadowOpacity = opacity
         layer.shadowRadius = radius
         layer.shadowOffset = offset
@@ -28,7 +28,7 @@ extension UIView {
     }
     
     @discardableResult
-    public func addBorder(width: CGFloat, color: UIColor) -> UIView {
+    public func setupBorder(width: CGFloat, color: UIColor) -> UIView {
         layer.borderWidth = width
         layer.borderColor = color.cgColor
         return self
@@ -36,7 +36,7 @@ extension UIView {
 }
 
 extension UIViewController {
-    public func addLine(view : UIView, position : LINE_POSITION, color: UIColor, width: Double) {
+    public func setupLine(view : UIView, position : LINE_POSITION, color: UIColor, width: Double) {
         let lineView = UIView()
         lineView.backgroundColor = color
         lineView.translatesAutoresizingMaskIntoConstraints = false

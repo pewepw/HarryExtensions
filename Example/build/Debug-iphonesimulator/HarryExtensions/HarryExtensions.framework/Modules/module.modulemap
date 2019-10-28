@@ -1,0 +1,11 @@
+framework module HarryExtensions {
+  umbrella header "HarryExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module HarryExtensions.Swift {
+    header "HarryExtensions-Swift.h"
+    requires objc
+}

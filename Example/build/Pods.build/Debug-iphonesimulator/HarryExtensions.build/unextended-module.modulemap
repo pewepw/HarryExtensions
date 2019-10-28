@@ -1,0 +1,10 @@
+framework module HarryExtensions {
+  umbrella header "HarryExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module HarryExtensions.__Swift {
+    exclude header "HarryExtensions-Swift.h"
+}

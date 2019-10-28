@@ -87,6 +87,16 @@ extension UIView {
         }
     }
     
+    public func centerXTo(_ anchor: NSLayoutXAxisAnchor) {
+        translatesAutoresizingMaskIntoConstraints = false
+        centerXAnchor.constraint(equalTo: anchor).isActive = true
+    }
+    
+    public func centerYTo(_ anchor: NSLayoutYAxisAnchor) {
+        translatesAutoresizingMaskIntoConstraints = false
+        centerYAnchor.constraint(equalTo: anchor).isActive = true
+    }
+    
     public func centerXInSuperview(constant: CGFloat = 0) {
         translatesAutoresizingMaskIntoConstraints = false
         if let superViewCenterXAnchor = superview?.centerXAnchor {
