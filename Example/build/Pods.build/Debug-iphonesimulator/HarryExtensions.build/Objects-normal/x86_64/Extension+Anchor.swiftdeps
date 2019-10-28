@@ -9,6 +9,8 @@ provides-member:
 - ["So6UIViewC", "anchor"]
 - ["So6UIViewC", "fillSuperview"]
 - ["So6UIViewC", "centerInSuperview"]
+- ["So6UIViewC", "centerXTo"]
+- ["So6UIViewC", "centerYTo"]
 - ["So6UIViewC", "centerXInSuperview"]
 - ["So6UIViewC", "centerYInSuperview"]
 - ["So6UIViewC", "constrainWidth"]
@@ -195,8 +197,10 @@ depends-member:
 - ["So8NSObjectC", "centerInSuperview"]
 - !private ["So8NSObjectC", "centerXAnchor"]
 - ["So8NSObjectC", "centerXInSuperview"]
+- ["So8NSObjectC", "centerXTo"]
 - !private ["So8NSObjectC", "centerYAnchor"]
 - ["So8NSObjectC", "centerYInSuperview"]
+- ["So8NSObjectC", "centerYTo"]
 - ["So8NSObjectC", "constrainHeight"]
 - ["So8NSObjectC", "constrainWidth"]
 - !private ["So8NSObjectC", "constraint"]
@@ -356,8 +360,10 @@ depends-member:
 - ["So11UIResponderC", "centerInSuperview"]
 - !private ["So11UIResponderC", "centerXAnchor"]
 - ["So11UIResponderC", "centerXInSuperview"]
+- ["So11UIResponderC", "centerXTo"]
 - !private ["So11UIResponderC", "centerYAnchor"]
 - ["So11UIResponderC", "centerYInSuperview"]
+- ["So11UIResponderC", "centerYTo"]
 - ["So11UIResponderC", "constrainHeight"]
 - ["So11UIResponderC", "constrainWidth"]
 - ["So11UIResponderC", "fillSuperview"]
@@ -416,8 +422,10 @@ depends-member:
 - ["So6UIViewC", "centerInSuperview"]
 - !private ["So6UIViewC", "centerXAnchor"]
 - ["So6UIViewC", "centerXInSuperview"]
+- ["So6UIViewC", "centerXTo"]
 - !private ["So6UIViewC", "centerYAnchor"]
 - ["So6UIViewC", "centerYInSuperview"]
+- ["So6UIViewC", "centerYTo"]
 - ["So6UIViewC", "constrainHeight"]
 - ["So6UIViewC", "constrainWidth"]
 - ["So6UIViewC", "fillSuperview"]
@@ -1732,4 +1740,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f7e1484adf527d205dfc9305156418b2"
+interface-hash: "15875cbe7d7fdb72cbde08df481a2729"

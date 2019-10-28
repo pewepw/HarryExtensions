@@ -8,9 +8,9 @@ provides-member:
 - ["So6UIViewC", ""]
 - ["So16UIViewControllerC", ""]
 - ["So6UIViewC", "fadeAlpha"]
-- ["So6UIViewC", "addShadow"]
-- ["So6UIViewC", "addBorder"]
-- ["So16UIViewControllerC", "addLine"]
+- ["So6UIViewC", "setupShadow"]
+- ["So6UIViewC", "setupBorder"]
+- ["So16UIViewControllerC", "setupLine"]
 provides-dynamic-lookup:
 depends-top-level:
 - "=="
@@ -234,10 +234,7 @@ depends-member:
 - ["So8NSObjectC", "TimeInterval"]
 - ["So8NSObjectC", "UIColor"]
 - ["So8NSObjectC", "UIView"]
-- ["So8NSObjectC", "addBorder"]
 - !private ["So8NSObjectC", "addConstraints"]
-- ["So8NSObjectC", "addLine"]
-- ["So8NSObjectC", "addShadow"]
 - !private ["So8NSObjectC", "addSubview"]
 - !private ["So8NSObjectC", "alpha"]
 - !private ["So8NSObjectC", "animate"]
@@ -250,6 +247,9 @@ depends-member:
 - ["So8NSObjectC", "fadeAlpha"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "layer"]
+- ["So8NSObjectC", "setupBorder"]
+- ["So8NSObjectC", "setupLine"]
+- ["So8NSObjectC", "setupShadow"]
 - !private ["So8NSObjectC", "shadowColor"]
 - !private ["So8NSObjectC", "shadowOffset"]
 - !private ["So8NSObjectC", "shadowOpacity"]
@@ -400,10 +400,7 @@ depends-member:
 - ["So11UIResponderC", "TimeInterval"]
 - ["So11UIResponderC", "UIColor"]
 - ["So11UIResponderC", "UIView"]
-- ["So11UIResponderC", "addBorder"]
 - !private ["So11UIResponderC", "addConstraints"]
-- ["So11UIResponderC", "addLine"]
-- ["So11UIResponderC", "addShadow"]
 - !private ["So11UIResponderC", "addSubview"]
 - !private ["So11UIResponderC", "alpha"]
 - !private ["So11UIResponderC", "animate"]
@@ -411,6 +408,9 @@ depends-member:
 - ["So11UIResponderC", "fadeAlpha"]
 - !private ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "layer"]
+- ["So11UIResponderC", "setupBorder"]
+- ["So11UIResponderC", "setupLine"]
+- ["So11UIResponderC", "setupShadow"]
 - !private ["So11UIResponderC", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So30UIResponderStandardEditActionsP", "NSLayoutConstraint"]
 - !private ["So30UIResponderStandardEditActionsP", "NSNumber"]
@@ -454,9 +454,7 @@ depends-member:
 - ["So6UIViewC", "TimeInterval"]
 - ["So6UIViewC", "UIColor"]
 - ["So6UIViewC", "UIView"]
-- ["So6UIViewC", "addBorder"]
 - !private ["So6UIViewC", "addConstraints"]
-- ["So6UIViewC", "addShadow"]
 - !private ["So6UIViewC", "addSubview"]
 - !private ["So6UIViewC", "alpha"]
 - !private ["So6UIViewC", "animate"]
@@ -464,6 +462,8 @@ depends-member:
 - ["So6UIViewC", "fadeAlpha"]
 - !private ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "layer"]
+- ["So6UIViewC", "setupBorder"]
+- ["So6UIViewC", "setupShadow"]
 - !private ["So6UIViewC", "translatesAutoresizingMaskIntoConstraints"]
 - ["So16UIViewControllerC", "Double"]
 - ["So16UIViewControllerC", "LINE_POSITION"]
@@ -471,7 +471,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "NSNumber"]
 - ["So16UIViewControllerC", "UIColor"]
 - ["So16UIViewControllerC", "UIView"]
-- ["So16UIViewControllerC", "addLine"]
+- ["So16UIViewControllerC", "setupLine"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "zero"]
 - !private ["s26_ExpressibleByColorLiteralP", "black"]
 - !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
@@ -1778,4 +1778,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "91cd0b1498f7b8f5c32394f720e5ed3a"
+interface-hash: "9b3315097850d3b7a5d97193ce7fd206"
