@@ -62,4 +62,33 @@ extension String {
     public var containsLatinCharactersOnly: Bool {
         return self.range(of: "\\P{Latin}", options: .regularExpression) == nil
     }
+    
+    public func split(by length: Int) -> [String] {
+        var startIndex = self.startIndex
+        var results = [Substring]()
+        
+        while startIndex < self.endIndex {
+            let endIndex = self.index(startIndex, offsetBy: length, limitedBy: self.endIndex) ?? self.endIndex
+            results.append(self[startIndex..<endIndex])
+            startIndex = endIndex
+        }
+        
+        return results.map { String($0) }
+    }
+    
+    public func formatNumberToFractionDigit(of count: Int) -> String {
+        let value = Double(self) ?? 0.0
+        let formatter = NumberFormatter()
+        formatter.minimumIntegerDigits = 1
+        formatter.minimumFractionDigits = count
+        formatter.maximumFractionDigits = count
+        return formatter.string(from: NSNumber(value: value))!
+    }
+    
+    public func convertFromStringToDate(format: String? = "yyyy-MM-dd HH:mm:ss") -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        return dateFormatter.date(from: self)
+    }
 }
