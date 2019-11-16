@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
 options: "0ae9b30dcb4dcea79aef510eb0d27203"
-build_time: [1573929915, 279631000]
+build_time: [1573932038, 70591000]
 inputs:
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Double.swift": [1563812199, 847522816]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Button.swift": [1563812199, 847007561]
@@ -10,14 +10,14 @@ inputs:
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Alert.swift": [1569336420, 730716815]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Device.swift": [1563812199, 847401076]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+TextField.swift": [1563812199, 848467230]
-  "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+String.swift": [1566451699, 40066734]
+  "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+String.swift": [1573930276, 725942918]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Color.swift": [1563812199, 847136375]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Date.swift": [1569336420, 731213857]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+View.swift": [1572286021, 841988005]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Navigation.swift": [1563812199, 847950200]
-  "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension.swift": [1563812199, 848895737]
+  "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension.swift": [1573930276, 680754005]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Anchor.swift": [1572286081, 745088483]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Storage.swift": [1563812199, 848282505]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Label.swift": [1563812199, 847815448]
   "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Array.swift": [1569336420, 731050522]
-  "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Image.swift": [1563812199, 847648542]
+  "/Users/harry/Desktop/iOS-Dev/HarryExtensions/HarryExtensions/Classes/Extension+Image.swift": [1573930564, 442292923]
