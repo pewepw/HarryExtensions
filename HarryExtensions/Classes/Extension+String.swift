@@ -9,8 +9,13 @@
 import UIKit
 
 extension String {
-    public func loadUrlWithSpace() -> String {
-        return addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
+    public func urlEncoded() -> String {
+        let encodeUrlString = self.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        return encodeUrlString ?? ""
+    }
+    
+    public func urlDecoded() -> String {
+        return self.removingPercentEncoding ?? ""
     }
     
     public func isNumber() -> Bool {
@@ -90,5 +95,14 @@ extension String {
         dateFormatter.dateFormat = format
         dateFormatter.locale = Locale(identifier: "en_US_POSIX")
         return dateFormatter.date(from: self)
+    }
+    
+    public func removeCharacters(from forbiddenChars: CharacterSet) -> String {
+        let passed = self.unicodeScalars.filter { !forbiddenChars.contains($0) }
+        return String(String.UnicodeScalarView(passed))
+    }
+    
+    public func removeCharacters(from: String) -> String {
+        return removeCharacters(from: CharacterSet(charactersIn: from))
     }
 }
