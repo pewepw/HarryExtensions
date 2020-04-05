@@ -9,6 +9,17 @@
 import UIKit
 
 extension UIViewController {
+    public func divider() -> UIView {
+        let divider = UIView()
+        divider.constrainHeight(constant: 0.5)
+        if #available(iOS 13.0, *) {
+            divider.backgroundColor = UIColor.separator
+        } else {
+            divider.backgroundColor = #colorLiteral(red: 0.2352941176, green: 0.2352941176, blue: 0.262745098, alpha: 1)
+        }
+        return divider
+    }
+    
     public func isValidEmailAddress(emailAddressString: String) -> Bool {
         var returnValue = true
         let emailRegEx = "[A-Z0-9a-z.-_]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,3}"

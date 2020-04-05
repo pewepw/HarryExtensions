@@ -32,15 +32,33 @@ extension UITextField {
         }
     }
     
-    public func setLeftPaddingPoints(_ amount: CGFloat) {
-        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
+    public func setLeftPadding(_ width: CGFloat) {
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: width, height: self.frame.size.height))
         self.leftView = paddingView
         self.leftViewMode = .always
     }
     
-    public func setRightPaddingPoints(_ amount: CGFloat) {
-        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
+    public func setRightPadding(_ width: CGFloat) {
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: width, height: self.frame.size.height))
         self.rightView = paddingView
         self.rightViewMode = .always
+    }
+    
+    public func setLeftView(imageNamed: String, containerFrame: CGRect = CGRect(x: 0, y: 0, width: 40, height: 40), imageViewFrame: CGRect = CGRect(x: 0, y: 0, width: 40, height: 40)) {
+        let containerView = UIView(frame: containerFrame)
+        let imageView = UIImageView(frame: imageViewFrame)
+        imageView.image = UIImage(named: imageNamed)
+        containerView.addSubview(imageView)
+        leftView = containerView
+        leftViewMode = UITextField.ViewMode.always
+    }
+    
+    public func setRightView(imageNamed: String, containerFrame: CGRect = CGRect(x: 0, y: 0, width: 40, height: 40), imageViewFrame: CGRect = CGRect(x: 0, y: 0, width: 40, height: 40)) {
+        let containerView = UIView(frame: containerFrame)
+        let imageView = UIImageView(frame: imageViewFrame)
+        imageView.image = UIImage(named: imageNamed)
+        containerView.addSubview(imageView)
+        rightView = containerView
+        rightViewMode = UITextField.ViewMode.always
     }
 }
