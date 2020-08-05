@@ -9,15 +9,34 @@
 import UIKit
 
 extension UIViewController {
-    public func divider() -> UIView {
-        let divider = UIView()
-        divider.constrainHeight(constant: 0.5)
-        if #available(iOS 13.0, *) {
-            divider.backgroundColor = UIColor.separator
-        } else {
-            divider.backgroundColor = #colorLiteral(red: 0.2352941176, green: 0.2352941176, blue: 0.262745098, alpha: 1)
+    public func present(viewController: UIViewController,
+                 modalPresentationStyle: UIModalPresentationStyle?,
+                 modalTransitionStyle: UIModalTransitionStyle?) {
+        viewController.modalPresentationStyle = modalPresentationStyle ?? .fullScreen
+        viewController.modalTransitionStyle = modalTransitionStyle ?? .coverVertical
+        present(viewController, animated: true, completion: nil)
+    }
+    
+    public func setupSafeAreaBottomCoverView() {
+        if #available(iOS 11.0, *) {
+            let window = UIApplication.shared.keyWindow
+            let bottomPadding = window?.safeAreaInsets.bottom
+            let safeAreaCoverView = UIView()
+            safeAreaCoverView.backgroundColor = .white
+            view.addSubview(safeAreaCoverView)
+            safeAreaCoverView.anchor(top: nil, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 0, left: 0, bottom: -(bottomPadding ?? 10), right: 0), size: .init(width: 0, height: bottomPadding ?? 10))
         }
-        return divider
+    }
+    
+    public func setupSafeAreaTopCoverView() {
+        if #available(iOS 11.0, *) {
+            let window = UIApplication.shared.keyWindow
+            let topPadding = window?.safeAreaInsets.top
+            let safeAreaCoverView = UIView()
+            safeAreaCoverView.backgroundColor = UIColor.white
+            view.addSubview(safeAreaCoverView)
+            safeAreaCoverView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: -(topPadding ?? 10), left: 0, bottom: 0, right: 0), size: .init(width: 0, height: topPadding ?? 10))
+        }
     }
     
     public func isValidEmailAddress(emailAddressString: String) -> Bool {

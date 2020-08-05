@@ -1,8 +1,9 @@
 //
 //  Extension+Formatter.swift
-//  HarryExtensions
+//  
 //
 //  Created by Harry on 14/05/2020.
+//  Copyright © 2019 Harry. All rights reserved.
 //
 
 import UIKit
@@ -19,13 +20,13 @@ extension Formatter {
 }
 
 extension Double {
-    var formattedWithSeparator: String {
+    public var formattedWithSeparator: String {
         return Formatter.withSeparator.string(for: self) ?? ""
     }
 }
 
 extension String {
-    var formattedWithSeparator: String {
+    public var formattedWithSeparator: String {
         return Formatter.withSeparator.string(for: Double(self)) ?? ""
     }
 }

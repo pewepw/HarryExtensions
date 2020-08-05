@@ -56,6 +56,12 @@ extension Date {
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
         return dateFormatter.string(from: self)
     }
+    
+    public func convertTo(format: String) -> String? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        return dateFormatter.string(from: self)
+    }
 }
 
 extension UIViewController {
