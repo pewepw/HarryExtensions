@@ -59,6 +59,7 @@ public class VerticalStackView: UIStackView {
         self.distribution = distribution
         self.alignment = alignment
         self.layoutMargins = layoutMargins
+        self.isLayoutMarginsRelativeArrangement = true
     }
     
     required init(coder: NSCoder) {
@@ -79,6 +80,7 @@ public class HorizontalStackView: UIStackView {
         self.distribution = distribution
         self.alignment = alignment
         self.layoutMargins = layoutMargins
+        self.isLayoutMarginsRelativeArrangement = true
     }
     
     required init(coder: NSCoder) {
