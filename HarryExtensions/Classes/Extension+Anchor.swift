@@ -49,22 +49,41 @@ extension UIView {
         return anchoredConstraints
     }
     
-    public func fillSuperview(padding: UIEdgeInsets = .zero) {
+    public func fillSuperview(ignoreSafeArea: Bool = false, padding: UIEdgeInsets = .zero) {
         translatesAutoresizingMaskIntoConstraints = false
-        if let superviewTopAnchor = superview?.topAnchor {
-            topAnchor.constraint(equalTo: superviewTopAnchor, constant: padding.top).isActive = true
-        }
         
-        if let superviewBottomAnchor = superview?.bottomAnchor {
-            bottomAnchor.constraint(equalTo: superviewBottomAnchor, constant: -padding.bottom).isActive = true
-        }
-        
-        if let superviewLeadingAnchor = superview?.leadingAnchor {
-            leadingAnchor.constraint(equalTo: superviewLeadingAnchor, constant: padding.left).isActive = true
-        }
-        
-        if let superviewTrailingAnchor = superview?.trailingAnchor {
-            trailingAnchor.constraint(equalTo: superviewTrailingAnchor, constant: -padding.right).isActive = true
+        if ignoreSafeArea {
+            if let superviewTopAnchor = superview?.topAnchor {
+                topAnchor.constraint(equalTo: superviewTopAnchor, constant: padding.top).isActive = true
+            }
+            
+            if let superviewBottomAnchor = superview?.bottomAnchor {
+                bottomAnchor.constraint(equalTo: superviewBottomAnchor, constant: -padding.bottom).isActive = true
+            }
+            
+            if let superviewLeadingAnchor = superview?.leadingAnchor {
+                leadingAnchor.constraint(equalTo: superviewLeadingAnchor, constant: padding.left).isActive = true
+            }
+            
+            if let superviewTrailingAnchor = superview?.trailingAnchor {
+                trailingAnchor.constraint(equalTo: superviewTrailingAnchor, constant: -padding.right).isActive = true
+            }
+        } else {
+            if let superviewTopAnchor = superview?.safeAreaLayoutGuide.topAnchor {
+                topAnchor.constraint(equalTo: superviewTopAnchor, constant: padding.top).isActive = true
+            }
+            
+            if let superviewBottomAnchor = superview?.safeAreaLayoutGuide.bottomAnchor {
+                bottomAnchor.constraint(equalTo: superviewBottomAnchor, constant: -padding.bottom).isActive = true
+            }
+            
+            if let superviewLeadingAnchor = superview?.safeAreaLayoutGuide.leadingAnchor {
+                leadingAnchor.constraint(equalTo: superviewLeadingAnchor, constant: padding.left).isActive = true
+            }
+            
+            if let superviewTrailingAnchor = superview?.safeAreaLayoutGuide.trailingAnchor {
+                trailingAnchor.constraint(equalTo: superviewTrailingAnchor, constant: -padding.right).isActive = true
+            }
         }
     }
     
