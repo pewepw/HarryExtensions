@@ -49,7 +49,7 @@ extension UIView {
         return anchoredConstraints
     }
     
-    public func fillSuperview(ignoreSafeArea: Bool = true, padding: UIEdgeInsets = .zero) {
+    public func fillSuperview(ignoreSafeArea: Bool = false, padding: UIEdgeInsets = .zero) {
         translatesAutoresizingMaskIntoConstraints = false
         
         if ignoreSafeArea {
