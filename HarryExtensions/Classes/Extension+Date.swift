@@ -9,7 +9,7 @@
 import UIKit
 
 extension Date {
-    func convertToDayOfWeekShort() -> String? {
+    public func convertToDayOfWeekShort() -> String? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEE"
         return dateFormatter.string(from: self)

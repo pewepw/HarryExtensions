@@ -10,20 +10,22 @@
 import UIKit
 
 class Layout {
+    static let instance = Layout()
+    
     private static var defaultFontName: String = ""
     private static var defaultTextColor: UIColor = UIColor.gray
     
-    public static func setDefaultFont(fontName: String, textColor: UIColor) {
-        defaultFontName = fontName
-        defaultTextColor = textColor
+    public func setDefaultFont(fontName: String, textColor: UIColor) {
+        Layout.defaultFontName = fontName
+        Layout.defaultTextColor = textColor
     }
     
-    public static func createLabel(_ text: String, font: String? = defaultFontName, size: CGFloat? = 16, color: UIColor? = defaultTextColor, textAlignment: NSTextAlignment? = .left, numberOfLines: Int? = 1, isUnderlined: Bool? = false, adjustsFontSizeToFitWidth: Bool? = false) -> UILabel {
+    public func createLabel(_ text: String, font: String? = defaultFontName, size: CGFloat? = 16, color: UIColor? = defaultTextColor, textAlignment: NSTextAlignment? = .left, numberOfLines: Int? = 1, isUnderlined: Bool? = false, adjustsFontSizeToFitWidth: Bool? = false) -> UILabel {
         let label = UILabel()
         label.numberOfLines = numberOfLines ?? 1
         label.textColor = color
         label.textAlignment = textAlignment ?? .left
-        label.font = UIFont(name: font ?? defaultFontName, size: size ?? 16)
+        label.font = UIFont(name: font ?? Layout.defaultFontName, size: size ?? 16)
         label.text = text
         label.minimumScaleFactor = 0.5
         label.adjustsFontSizeToFitWidth = adjustsFontSizeToFitWidth ?? false
@@ -33,18 +35,18 @@ class Layout {
         return label
     }
     
-    public static func createTextField(_ placeholder: String, font: String? = defaultFontName, size: CGFloat? = 16, color: UIColor? = defaultTextColor, textAlignment: NSTextAlignment? = .left, keyboardType: UIKeyboardType? = .default, haveBorder: Bool = false) -> UITextField {
+    public func createTextField(_ placeholder: String, font: String? = defaultFontName, size: CGFloat? = 16, color: UIColor? = defaultTextColor, textAlignment: NSTextAlignment? = .left, keyboardType: UIKeyboardType? = .default, haveBorder: Bool = false) -> UITextField {
         let tf = UITextField()
         tf.textColor = color
         tf.textAlignment = textAlignment ?? .left
-        tf.font = UIFont(name: font ?? defaultFontName, size: size ?? 16)
+        tf.font = UIFont(name: font ?? Layout.defaultFontName, size: size ?? 16)
         tf.placeholder = placeholder
         tf.keyboardType = keyboardType ?? .default
         tf.borderStyle = haveBorder ? .roundedRect : .none
         return tf
     }
     
-    public static func createView(backgroundColor: UIColor = .white, cornerRadius: CGFloat = 0, clipsToBounds: Bool? = true) -> UIView {
+    public func createView(backgroundColor: UIColor = .white, cornerRadius: CGFloat = 0, clipsToBounds: Bool? = true) -> UIView {
         let view = UIView()
         view.backgroundColor = backgroundColor
         view.layer.cornerRadius = cornerRadius
@@ -52,7 +54,7 @@ class Layout {
         return view
     }
     
-    public static func createImageView(named: String, contentMode: UIImageView.ContentMode? = .scaleAspectFit, tintColor: UIColor? = nil, cornerRadius: CGFloat = 0) -> UIImageView {
+    public func createImageView(named: String, contentMode: UIImageView.ContentMode? = .scaleAspectFit, tintColor: UIColor? = nil, cornerRadius: CGFloat = 0) -> UIImageView {
         let imageView = UIImageView()
         imageView.image = UIImage(named: named)
         imageView.contentMode = contentMode ?? .scaleAspectFit
@@ -62,7 +64,7 @@ class Layout {
         return imageView
     }
     
-    public static func createSystemImageView(systemName: String, tintColor: UIColor? = nil) -> UIImageView {
+    public func createSystemImageView(systemName: String, tintColor: UIColor? = nil) -> UIImageView {
         let imageView = UIImageView()
         if #available(iOS 13.0, *) {
             imageView.image = UIImage(systemName: systemName)
@@ -74,11 +76,11 @@ class Layout {
         return imageView
     }
     
-    public static func createButton(_ title: String, font: String? = defaultFontName, size: CGFloat? = 16, color: UIColor? = defaultTextColor, backgroundColor: UIColor? = .white, cornerRadius: CGFloat? = 0, imageName: String? = nil, self: Any?, action: Selector) -> UIButton {
+    public func createButton(_ title: String, font: String? = defaultFontName, size: CGFloat? = 16, color: UIColor? = defaultTextColor, backgroundColor: UIColor? = .white, cornerRadius: CGFloat? = 0, imageName: String? = nil, self: Any?, action: Selector) -> UIButton {
         let button = UIButton()
         button.setTitle(title, for: .normal)
         button.setTitleColor(color, for: .normal)
-        button.titleLabel?.font = UIFont(name: font ?? defaultFontName, size: size ?? 16)
+        button.titleLabel?.font = UIFont(name: font ?? Layout.defaultFontName, size: size ?? 16)
         button.backgroundColor = backgroundColor
         button.clipsToBounds = true
         button.addTarget(self, action: action, for: .touchUpInside)

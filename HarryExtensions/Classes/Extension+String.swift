@@ -106,7 +106,7 @@ extension String {
         return removeCharacters(from: CharacterSet(charactersIn: from))
     }
     
-    func convertToDictionary() -> [String: Any]? {
+    public func convertToDictionary() -> [String: Any]? {
         if let data = self.data(using: .utf8) {
             do {
                 return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
