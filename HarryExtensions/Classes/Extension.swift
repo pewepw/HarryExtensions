@@ -17,26 +17,24 @@ extension UIViewController {
         present(viewController, animated: true, completion: nil)
     }
     
-    public func setupSafeAreaBottomCoverView() {
-        if #available(iOS 11.0, *) {
-            let window = UIApplication.shared.keyWindow
-            let bottomPadding = window?.safeAreaInsets.bottom
-            let safeAreaCoverView = UIView()
-            safeAreaCoverView.backgroundColor = .white
-            view.addSubview(safeAreaCoverView)
-            safeAreaCoverView.anchor(top: nil, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 0, left: 0, bottom: -(bottomPadding ?? 10), right: 0), size: .init(width: 0, height: bottomPadding ?? 10))
-        }
+    public func setupSafeAreaBottomCoverView(onView view: UIView, color: UIColor = .white) -> UIView {
+        let window = UIApplication.shared.windows.first
+        let bottomPadding = window?.safeAreaInsets.bottom
+        let safeAreaCoverView = UIView()
+        safeAreaCoverView.backgroundColor = color
+        view.addSubview(safeAreaCoverView)
+        safeAreaCoverView.anchor(top: nil, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 0, left: 0, bottom: -(bottomPadding ?? 10), right: 0), size: .init(width: 0, height: bottomPadding ?? 10))
+        return safeAreaCoverView
     }
-    
-    public func setupSafeAreaTopCoverView() {
-        if #available(iOS 11.0, *) {
-            let window = UIApplication.shared.keyWindow
-            let topPadding = window?.safeAreaInsets.top
-            let safeAreaCoverView = UIView()
-            safeAreaCoverView.backgroundColor = UIColor.white
-            view.addSubview(safeAreaCoverView)
-            safeAreaCoverView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: -(topPadding ?? 10), left: 0, bottom: 0, right: 0), size: .init(width: 0, height: topPadding ?? 10))
-        }
+
+    public func setupSafeAreaTopCoverView(onView view: UIView, color: UIColor = .white) -> UIView {
+        let window = UIApplication.shared.windows.first
+        let topPadding = window?.safeAreaInsets.top
+        let safeAreaCoverView = UIView()
+        safeAreaCoverView.backgroundColor = color
+        view.addSubview(safeAreaCoverView)
+        safeAreaCoverView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: -(topPadding ?? 10), left: 0, bottom: 0, right: 0), size: .init(width: 0, height: topPadding ?? 10))
+        return safeAreaCoverView
     }
     
     public func isValidEmailAddress(emailAddressString: String) -> Bool {
@@ -60,7 +58,7 @@ extension UIViewController {
     }
     
     public func isIpad() -> Bool{
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.pad {
+        if UIDevice().userInterfaceIdiom == UIUserInterfaceIdiom.pad {
             return true
         } else {
             return false

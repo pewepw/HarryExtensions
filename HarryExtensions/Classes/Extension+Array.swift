@@ -19,6 +19,13 @@ extension Array where Element: Comparable {
 }
 
 extension Array {
+    public func convertToJSON() -> String? {
+        guard let data = try? JSONSerialization.data(withJSONObject: self, options: []) else {
+            return nil
+        }
+        return String(data: data, encoding: String.Encoding.utf8)
+    }
+    
     public func chunked(into size: Int) -> [[Element]] {
         return stride(from: 0, to: count, by: size).map {
             Array(self[$0 ..< Swift.min($0 + size, count)])

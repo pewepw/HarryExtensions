@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIApplication {
-    public class func topViewControllers(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+    public class func topViewControllers(controller: UIViewController? = UIApplication.shared.windows.first?.rootViewController) -> UIViewController? {
         if let navigationController = controller as? UINavigationController {
             return topViewControllers(controller: navigationController.visibleViewController)
         }

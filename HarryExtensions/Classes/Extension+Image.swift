@@ -6,6 +6,8 @@
 //  Copyright © 2019 Harry. All rights reserved.
 //
 
+import UIKit
+
 extension UIImageView {
     public func downloadedFrom(url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFill) {
         contentMode = mode

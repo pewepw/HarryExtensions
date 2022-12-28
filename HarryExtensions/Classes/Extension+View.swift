@@ -33,6 +33,15 @@ extension UIView {
         layer.borderColor = color.cgColor
         return self
     }
+    
+    public func applyLayerGradient(color1: UIColor, color2: UIColor) {
+        let layer: CAGradientLayer = CAGradientLayer()
+        layer.frame.size = self.frame.size
+        layer.frame.origin = CGPoint(x: 0, y: 0)
+        layer.colors = [color1.cgColor, color2.cgColor]
+        layer.locations = [0.0, 1.0]
+        self.layer.insertSublayer(layer, at: 0)
+    }
 }
 
 extension UIViewController {

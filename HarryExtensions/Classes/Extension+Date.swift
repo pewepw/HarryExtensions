@@ -62,26 +62,12 @@ extension Date {
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: self)
     }
-}
-
-extension UIViewController {
-    public func convertTimezoneToCurrent(date: String) -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        dateFormatter.timeZone = TimeZone(abbreviation: "GMT+8")
-        
-        let dt = dateFormatter.date(from: date)
-        dateFormatter.timeZone = TimeZone.current
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        
-        return dateFormatter.string(from: dt!)
-    }
     
-    public func timeAgoSince(_ date: Date) -> String {
+    public func timeAgoSince() -> String {
         let calendar = Calendar.current
         let now = Date()
         let unitFlags: NSCalendar.Unit = [.second, .minute, .hour, .day, .weekOfYear, .month, .year]
-        let components = (calendar as NSCalendar).components(unitFlags, from: date, to: now, options: [])
+        let components = (calendar as NSCalendar).components(unitFlags, from: self, to: now, options: [])
         
         if let year = components.year, year >= 2 {
             return "\(year) " + "years ago"
@@ -138,4 +124,3 @@ extension UIViewController {
         return "Just now"
     }
 }
-

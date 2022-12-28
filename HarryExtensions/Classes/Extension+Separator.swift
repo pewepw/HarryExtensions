@@ -9,13 +9,9 @@
 import UIKit
 
 extension UICollectionReusableView {
-    public func setupSeparatorView(superview: UIView, hPadding: CGFloat, vPadding: CGFloat, onTop: Bool) {
+    public func setupSeparatorView(superview: UIView, hPadding: CGFloat, vPadding: CGFloat, onTop: Bool, color: UIColor? = UIColor.separator) {
         let view = UIView()
-        if #available(iOS 13.0, *) {
-            view.backgroundColor = UIColor.separator
-        } else {
-            view.backgroundColor = #colorLiteral(red: 0.2352941176, green: 0.2352941176, blue: 0.262745098, alpha: 1)
-        }
+        view.backgroundColor = color
         superview.addSubview(view)
         
         if onTop {
@@ -25,26 +21,18 @@ extension UICollectionReusableView {
         }
     }
     
-    public func getSeparatorView() -> UIView {
+    public func getSeparatorView(color: UIColor? = UIColor.separator) -> UIView {
         let view = UIView()
-        if #available(iOS 13.0, *) {
-            view.backgroundColor = UIColor.separator
-        } else {
-            view.backgroundColor = #colorLiteral(red: 0.2352941176, green: 0.2352941176, blue: 0.262745098, alpha: 1)
-        }
+        view.backgroundColor = color
         view.constrainHeight(constant: 0.5)
         return view
     }
 }
 
 extension UIViewController {
-    public func setupSeparatorView(superview: UIView, hPadding: CGFloat, vPadding: CGFloat, onTop: Bool) {
+    public func setupSeparatorView(superview: UIView, hPadding: CGFloat, vPadding: CGFloat, onTop: Bool, color: UIColor? = UIColor.separator) {
         let view = UIView()
-        if #available(iOS 13.0, *) {
-            view.backgroundColor = UIColor.separator
-        } else {
-            view.backgroundColor = #colorLiteral(red: 0.2352941176, green: 0.2352941176, blue: 0.262745098, alpha: 1)
-        }
+        view.backgroundColor = color
         superview.addSubview(view)
         
         if onTop {
