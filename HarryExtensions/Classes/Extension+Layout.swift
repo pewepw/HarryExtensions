@@ -9,18 +9,17 @@
 
 import UIKit
 
-class Layout {
-    static let instance = Layout()
-    
-    private static var defaultFontName: String = ""
-    private static var defaultTextColor: UIColor = UIColor.gray
+public class Layout {
+    public static let instance = Layout()
+    public static var defaultFontName: String = ""
+    public static var defaultTextColor: UIColor = UIColor.gray
     
     public func setDefaultFont(fontName: String, textColor: UIColor) {
         Layout.defaultFontName = fontName
         Layout.defaultTextColor = textColor
     }
     
-    public func createLabel(_ text: String, font: String? = defaultFontName, size: CGFloat? = 16, color: UIColor? = defaultTextColor, textAlignment: NSTextAlignment? = .left, numberOfLines: Int? = 1, isUnderlined: Bool? = false, adjustsFontSizeToFitWidth: Bool? = false) -> UILabel {
+    public func createLabel(_ text: String, font: String? = Layout.defaultFontName, size: CGFloat? = 16, color: UIColor? = Layout.defaultTextColor, textAlignment: NSTextAlignment? = .left, numberOfLines: Int? = 1, isUnderlined: Bool? = false, adjustsFontSizeToFitWidth: Bool? = false) -> UILabel {
         let label = UILabel()
         label.numberOfLines = numberOfLines ?? 1
         label.textColor = color
@@ -35,7 +34,7 @@ class Layout {
         return label
     }
     
-    public func createTextField(_ placeholder: String, font: String? = defaultFontName, size: CGFloat? = 16, color: UIColor? = defaultTextColor, textAlignment: NSTextAlignment? = .left, keyboardType: UIKeyboardType? = .default, haveBorder: Bool = false) -> UITextField {
+    public func createTextField(_ placeholder: String, font: String? = Layout.defaultFontName, size: CGFloat? = 16, color: UIColor? = Layout.defaultTextColor, textAlignment: NSTextAlignment? = .left, keyboardType: UIKeyboardType? = .default, haveBorder: Bool = false) -> UITextField {
         let tf = UITextField()
         tf.textColor = color
         tf.textAlignment = textAlignment ?? .left
